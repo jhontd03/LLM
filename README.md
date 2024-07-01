@@ -1,2 +1,2 @@
-# LLM
-LLM Zoomcamp
+# LLM ZoomCamp
+Homeworks LLM ZoomCamp
