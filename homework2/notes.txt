@@ -1,0 +1,15 @@
+﻿docker run -it \
+    --rm \
+    -v E:\algorithmic_trading\python\git_repo\ZoomCamp\LLM\homework2\ollama_files:/root/.ollama \
+    -p 11434:11434 \
+    --name ollama \
+    ollama/ollama
+    
+    
+    
+# Usa la imagen base de ollama/ollama
+FROM ollama/ollama
+
+# Copia los pesos desde tu directorio local al directorio del contenedor
+# Cambia `./ollama_files/weights` por la ruta donde tengas los pesos en tu sistema
+COPY ./ollama_files/models /root/.ollama/
